@@ -1,3 +1,4 @@
+
 # Osteoporosis Prediction Project
 
 This project aims to develop a prediction system for osteoporosis using Logistic Regression and Random Forest models. The system predicts osteoporosis risk based on a variety of clinical and lifestyle factors. Below is a detailed explanation of the key components and scripts in this project.
@@ -72,21 +73,11 @@ Key Features:
 
 ---
 
-## How to Run the Project
+## How to run the Shiny App
 
-1. **Train the model**:
-   - Run 'Treball_Final_Bioinfo.R' to train the Logistic Regression. Make sure the dataset (osteoporosis.csv) is placed correctly at the specified path.
+Run docker-compose.yml using: docker-compose up. This will run the plumber API from port http://0.0.0.0:8000 and APP from http://0.0.0.0:8180.
 
-2. **Run the API**:
-   - Run 'API.R' to load the trained Logistic Regression model and set up the API with the predict_logistic` endpoint.
-
-3. **Start the server**:
-   - Run 'Run_API.R' to start the server and make the API available on port 8000.
-
-4. **Run the Shiny App**:
-
-   - Run app.R to launch the interactive prediction interface.
-
+Make sure you have docker, docker-compose plug-in and are running on linux! (We used colima for this)
 
 ---
 
